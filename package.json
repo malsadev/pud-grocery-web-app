@@ -1,0 +1,27 @@
+{
+  "name": "pud-grocery-web-app",
+  "version": "1.0.0",
+  "description": "online grocery list which you can share with family and/or roommates and keep track of everybody's debts and credits.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO"
+  },
+  "author": "Mustafa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase": "^10.7.1",
+    "firebase-admin": "^12.0.0",
+    "mime": "^4.0.1",
+    "path": "^0.12.7",
+    "uuid": "^9.0.1"
+  }
+}

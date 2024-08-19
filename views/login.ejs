@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page For PUD Grocery List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+</head>
+
+<body>
+
+    <script src="login.js" defer></script>
+
+    <div class="split-screen">
+        <div class="left"></div>
+
+        <div class="right">
+            <section class="copy">
+                <h2>Welcome to PUD Grocery List!</h2>
+                <p>Please login</p>
+            </section>
+
+            <form action="http://localhost:3000/login" method="post">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input name="username" placeholder="lying_duck" type="text" id="username" required />
+                    <i class="far fa-user icon"></i>
+                </div>
+
+                <label class="checkbox-container" for="">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Remember me
+                </label>
+
+                <button class="login-btn btn">Log in</button>
+
+            </form>
+
+            <!-- <div class="bar">
+                <p>or</p>
+            </div>
+
+            <div class="social">
+                <a class="btn" href="#"><img src="facebook.png" alt="" /></a>
+                <a class="btn" href="#"><img src="twitter.png" alt="" /></a>
+                <a class="btn" href="#"><img src="googleplus.png" alt="" /></a>
+            </div> -->
+
+            <!-- <div class="copy">
+                <p>Don't have an account? <a href=""><strong>Sign up</strong></a></p>
+            </div> -->
+
+        </div>
+
+
+    </div>
+    <!-- create a login page -->
+    <div style="display: none">
+        <div class="login-space">
+
+
+            <header>
+                <h2>Log in</h2>
+                <span>Enter your name to continue</span>
+            </header>
+
+
+            <!-- <div class="login-form"> -->
+            <form class="login-form" action="http://localhost:3000/login" method="post">
+                <label for="username">Enter your username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="remember_me">Remember me</label>
+                <!-- Here I specify a value of true. For this input type, the value will be mapped to
+                    the key "remember_me" only if the checkbox is checked. If not checked,
+                    the key will not be mapped to anything. Basically empty. -->
+                <input type="checkbox" id="remember_me" name="remember_me" value="true">
+
+
+                <!-- here I only need type and log in.
+                    I don't really need an ID for html document nor do I
+                    need to manage the button key value pair in the server -->
+                <input type="submit" value="Log in">
+            </form>
+            <!-- </div> -->
+
+        </div>
+        <div class="image-container">
+            <img src="grocery.jpg" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- <a href="https://www.flaticon.com/free-icons/foursquare-check-in" title="foursquare check in icons">Foursquare check in icons created by Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/circle" title="circle icons">Circle icons created by Freepik - Flaticon</a> -->
+</body>
+
+</html>

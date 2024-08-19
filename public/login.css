@@ -1,0 +1,114 @@
+ot {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 580;
+    color: white;
+    /* overflow: scroll; */
+}
+
+
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    /* width: 100%; */
+
+}
+
+.left {
+    /* display: flex; */
+    width: 100%;
+    height: 350px;;
+
+    background: url("grocery.jpg");
+    background-size: cover;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 31, 31);
+}
+
+
+.copy{
+    /* font-size: 1rem; */
+    text-align: center;
+}
+
+p {
+    font-size: 0.625rem;
+    /* margin-top: 5; */
+    padding-top:0;
+}
+
+form {
+    /* width: 328px; */
+    font-size: 0.7rem;
+}
+
+form input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 13px;
+    background: rgb(80, 80, 80);
+    border-style: hidden;
+    padding: 6px;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.65rem;
+}
+
+.login-btn.btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 13px;
+    background-color: brown;
+    color: white;
+    font-weight: 800;
+    border-style: hidden;
+
+}
+
+
+
+@media screen and (min-width: 930px){
+
+    .split-screen {
+        flex-direction: row;
+        /* height: 100vh; */
+    }
+
+    .left, .right {
+        /* display: flex; */
+        width: 50%;
+        height: 100%;
+    }
+}

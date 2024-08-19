@@ -1,0 +1,492 @@
+
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 580;
+    color: white;
+    /* overflow: scroll; */
+}
+
+
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    /* width: 100%; */
+
+}
+
+.left {
+    /* display: flex; */
+    width: 100%;
+    height: 350px;;
+
+    background: url("grocery.jpg");
+    background-size: cover;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 31, 31);
+}
+
+
+.copy{
+    /* font-size: 1rem; */
+    text-align: center;
+}
+
+p {
+    font-size: 0.625rem;
+    /* margin-top: 5; */
+    padding-top:0;
+}
+
+form {
+    /* width: 328px; */
+    font-size: 0.7rem;
+}
+
+form input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 13px;
+    background: rgb(80, 80, 80);
+    border-style: hidden;
+    padding: 6px;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.65rem;
+}
+
+.login-btn.btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 13px;
+    background-color: brown;
+    color: white;
+    font-weight: 800;
+    border-style: hidden;
+
+}
+
+
+
+@media screen and (min-width: 930px){
+
+    .split-screen {
+        flex-direction: row;
+        /* height: 100vh; */
+    }
+
+    .left, .right {
+        /* display: flex; */
+        width: 50%;
+        height: 100%;
+    }
+}
+
+
+.container * {
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 100%; */
+    height: 100vh;
+    background: rgb(51, 48, 48);
+    padding: 10px;
+    overflow: scroll;
+}
+
+.todo-app {
+    color: rgb(190, 179, 179);
+    width: 100%;
+    max-width: 548px;
+    margin: 50px auto;
+    /* height: auto; */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background: rgb(87, 67, 67);
+    /* overflow: hidden; */
+    /* background-size: contain; */
+}
+
+.todo-app h2 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 20px;
+    /* background-size: cover; */
+}
+
+
+/* .container {
+    background: rgb(20, 20, 20);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+} */
+
+
+/* .inner-container {
+    display: flex;
+    align-items: center; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* width: 100%; */
+    /* left: 100px; */
+    /* right: 250px; */
+    /* position: relative; */
+    /* top: 130px; */
+/* } */
+
+/* .container header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; */
+    /* position: relative; */
+    /* margin-top: 50px;
+
+} */
+
+/* header span {
+    position: absolute;
+    right: 30px; */
+    /* top: 20px; */
+/* } */
+/* 
+header h2 {
+    position: relative;
+    left: 100px;
+} */
+
+
+/* .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; 
+/* } * */
+
+
+.row {
+    position: relative;
+    /* padding-left: 20px; */
+    border-radius: 30px;
+    background-color: antiquewhite;
+    /* width: 275px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 20px; */
+
+}
+.row input {
+    width: 100%;
+    flex: 1;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    background: rgb(95, 94, 94);
+    color: thistle;
+    outline: none;
+
+}
+
+.row button {
+    position: absolute;
+    top :0;
+    right: 0;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    color: whitesmoke;
+    background: rgb(190, 37, 37);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+    margin-left:0;
+    padding-left:0;
+    /* position: relative; */
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    /* padding-left: 50px; */
+    /* padding-bottom: ; */
+    cursor:pointer;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+     */
+    /* left: 20px; */
+}
+
+/* what are psudo elements*/
+ul li::before {
+    content: "";
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    /* height: 3px; */
+    background-image: url("/circumference.png");
+    /* position: absolute; */
+    /* margin-right: 30px; */
+    /* left:0; */
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    left: 12px;
+    /* top: 12px */
+    /* right: 30px; */
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li:hover {
+    background: gray;
+    border-radius: 12px;
+}
+
+
+ul li.checked::before {
+
+    content: "";
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    /* height: 3px; */
+    background-image: url("/check.png");
+    /* position: absolute; */
+    /* margin-right: 30px; */
+    /* left:0; */
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    left: 12px;
+    /* top: 12px */
+    /* right: 30px; */
+
+}
+
+
+ul li span {
+    position:absolute;
+    top: 5px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    /* position:absolute; */
+    background: green;
+    /* width: 25px;
+    height: 25px; */
+    /* text-align: center; */
+    /* padding: 5px; */
+    border-radius: 18px;
+
+}
+
+
+a {
+    text-decoration: none;
+    display: block;
+    /* margin: 10px auto; */
+    width: 100%;
+    /* padding: 40px 30px 70px; */
+    text-align: center;
+    /* background: rgb(41, 41, 204); */
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    color: whitesmoke;
+    background: rgb(190, 37, 37);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.task-owner-container {
+    /* display: block; */
+    position: absolute;
+    top:20px;
+    right:0;
+    width: 100%;
+    /* width: 30%; */
+    /* left: 100px; */
+    /* margin: 0px 130px; */
+    font-size: 10px;
+    line-height: 10px;
+    /* text-align: center; */
+}
+
+h3 {
+    /* width: 100%; */
+    text-align: center;
+}
+
+/* li {
+    display: flex;
+    justify-c;
+    flex: column;
+    width:100%;
+} */
+
+/* ul li::after */
+
+/* ul li.checked::after {
+    content: "\2715";
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right:0;
+    top: 5px; */
+    /* text-align: justify; */
+    /* text-justify: auto; */
+    /* line-height: 5px; */
+    /* background: gray; */
+    /* border-radius: 18px;  */
+
+/* } */
+
+/* ul li.checked:hover::after{
+    background-color: rgb(153, 144, 144);
+    background-position: center;
+    padding: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* .image-container {
+    position: relative;
+    width: 70%;
+    height: 100%;
+} */
+
+/* * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} */
+/* img {
+    position: absolute;
+    top:0;
+    left:0; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+
+    /* max-width: 600px; */
+
+    /* width:70%;
+    height:100%;
+    object-fit: cover;
+} */
+
+/* .login-space * {
+    display: block;
+    margin: 0px;
+
+}
+
+.login-form  {
+    margin-left: 50px;
+} */
+
+/* .login-form * {
+    margin: 10px;
+} */
+
+/* .login-space {
+    background: black;
+    color: white;
+    position: absolute;
+    width: 30%;
+    top:0;
+    right: 0.0002%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .login-space header {
+    margin-left:50px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 40px;
+    justify-content: stretch;
+} */
+/* .login-space header * {
+    padding: 5px;
+} */
+
+/* .login-space header span {
+    font-size: 10px;
+} */
+

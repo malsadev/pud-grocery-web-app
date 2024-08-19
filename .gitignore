@@ -1,0 +1,4 @@
+node_modules
+.vscode
+firebase-perm.json
+config.js
